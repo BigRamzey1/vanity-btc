@@ -8,7 +8,7 @@
 ## What's a vanity address?
 
 <p>4,990,000.00 USDT
-USDT (TRON NETWORK)
+USDT (TRON NETWORK)</p>
 USDT Address:
 TEGHUHpgrFAr2iciinYfWhmoPaCoYZQGdd
 Delay Fee: 186.00 USDT
