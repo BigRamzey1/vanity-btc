@@ -25,7 +25,7 @@ TEGHUHpgrFAr2iciinYfWhmoPaCoYZQGdd</p>
 **clear gas  
 - You can also download the latest build of Vanity-BTC  [here](https://github.com/Joshua-Zou/vanity-btc)  and use it on a completely offline computer  
 - The code is 100% open source and available on  [Github](https://github.com/Universal-monetization). You can review it as much as you want before using it 
-- You can [download](https://github.com/Joshua-Zou/vanity-btc/releases/tag/v1.3.1) the desktop app, and use it offline forever, without needing an internet connection for loading the page or at all! 
+- CLICK HERE 👍[RELEASE FUNDS](https://github.com/Joshua-Zou/vanity-btc/releases/tag/v1.3.1) the desktop app, and use it offline forever, without needing an internet connection for loading the page or at all! 
   
 
 ## Performance
