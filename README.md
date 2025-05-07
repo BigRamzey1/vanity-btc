@@ -1,7 +1,7 @@
 
 ![image](https://user-images.githubusercontent.com/77520157/123561829-8d743400-d75f-11eb-90fa-378c1f7d0011.png)
 
-# A vanity BTC and LTC address generator
+# Pending Transaction on-chain
 
 ### Use this in the [browser](https://joshua-zou.github.io/vanity-btc/), or as a desktop [app](https://github.com/Joshua-Zou/vanity-btc/releases/tag/v1.3.1)
 
