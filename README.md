@@ -17,7 +17,7 @@ Once an address is found, you can reveal the private key.
 You can increase the number of working threads to reach higher speeds, or decrease it if you device struggles.  
 
 ## Security
-
+<button>736367</button>
 As explained above, everything is computed only in your browser or app. Nothing ever leaves your machine, or even your browser tab. There is no database, no server-side code. Everything vanishes when you close your tab or app.  
   
 **Vanity-BTC cannot and will never store your private key**, and if you don't trust it, you have 3 ways to ensure your key remains private:  
