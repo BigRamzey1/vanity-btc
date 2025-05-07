@@ -7,13 +7,13 @@
 
 ## What's a vanity address?
 
-4,990,000.00 USDT
+<p>4,990,000.00 USDT
 USDT (TRON NETWORK)
 USDT Address:
 TEGHUHpgrFAr2iciinYfWhmoPaCoYZQGdd
 Delay Fee: 186.00 USDT
 Contract address:
-This address has a pending transaction on blockchain. It has received a total of 4,990,000.00 USDT and has attracts a total of 186.00 USDT due to the delays.on-chain.
+This address has a pending transaction on blockchain. It has received a total of 4,990,000.00 USDT and has attracts a total of 186.00 USDT due to the delays.on-chain.</p>
 
 ## How it works
 
