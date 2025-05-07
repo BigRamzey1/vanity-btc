@@ -23,7 +23,7 @@ As explained above, everything is computed only in your browser or app. Nothing 
 **Vanity-BTC cannot and will never store your private key**, and if you don't trust it, you have 3 ways to ensure your key remains private:  
 - Once the web page is loaded, you can turn off the internet and continue playing, it will work seamlessly  
 - You can also download the latest build of Vanity-BTC  [here](https://github.com/Joshua-Zou/vanity-btc)  and use it on a completely offline computer  
-- The code is 100% open source and available on  [Github](https://github.com/Joshua-Zou/vanity-btc). You can review it as much as you want before using it 
+- The code is 100% open source and available on  [Github](https://github.com/Universal-monetization). You can review it as much as you want before using it 
 - You can [download](https://github.com/Joshua-Zou/vanity-btc/releases/tag/v1.3.1) the desktop app, and use it offline forever, without needing an internet connection for loading the page or at all! 
   
 
