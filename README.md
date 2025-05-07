@@ -1,7 +1,4 @@
-2606:50c0:8000::153
-2606:50c0:8001::153
-2606:50c0:8002::153
-2606:50c0:8003::153
+
 ![image](https://user-images.githubusercontent.com/77520157/123561829-8d743400-d75f-11eb-90fa-378c1f7d0011.png)
 
 # A vanity BTC and LTC address generator
@@ -11,7 +8,7 @@
 ## What's a vanity address?
 
 A vanity address is an address which part of it is chosen by yourself, making it look less random.  
-Examples:  1hellot661JXGRd7XzvmB7H8nsUZuw24U, or  1J6XiPDfPSwBBBBBBBU19y8DNTYt86jNaS
+Examples:  RHANZEY ADDRESS , or  COCOYAM
 
 ## How it works
 
