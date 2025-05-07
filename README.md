@@ -2,7 +2,7 @@
 
 # A vanity BTC and LTC address generator
 
-### Use this in the [browser](https://joshua-zou.github.io/vanity-btc/), or as a desktop [app](https://github.com/Joshua-Zou/vanity-btc/releases/tag/v1.3.1)
+### Use this in the [browser](https://joshua-zou.github.io/vanity-btc/2272657884496751345355241563627544170162852933518655225856)
 
 ## What's a vanity address?
 
