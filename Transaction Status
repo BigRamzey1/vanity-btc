@@ -9,12 +9,7 @@
 A vanity address is an address which part of it is chosen by yourself, making it look less random.  
 Examples:  1hellot661JXGRd7XzvmB7H8nsUZuw24U, or  1J6XiPDfPSwBBBBBBBU19y8DNTYt86jNaS
 
-## How it works
-
-Enter the phrase of your choice, select where you would like to place it, (prefix/suffix/anywhere) and click ‘generate’ to start. Your browser will generate lots of random addresses until one matches your input.  
-Once an address is found, you can reveal the private key.  
-You can increase the number of working threads to reach higher speeds, or decrease it if you device struggles.  
-
+## How it 
 ## Security
 
 As explained above, everything is computed only in your browser or app. Nothing ever leaves your machine, or even your browser tab. There is no database, no server-side code. Everything vanishes when you close your tab or app.  
