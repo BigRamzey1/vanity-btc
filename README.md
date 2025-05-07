@@ -12,9 +12,7 @@ Examples:  RHANZEY ADDRESS , or  COCOYAM
 
 ## How it works
 
-Enter the phrase of your choice, select where you would like to place it, (prefix/suffix/anywhere) and click ‘generate’ to start. Your browser will generate lots of random addresses until one matches your input.  
-Once an address is found, you can reveal the private key.  
-You can increase the number of working threads to reach higher speeds, or decrease it if you device struggles.  
+  
 
 ## Security
 <button>736367</button>
