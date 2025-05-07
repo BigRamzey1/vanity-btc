@@ -3,7 +3,7 @@
 
 # Pending Transaction on-chain
 
-### Use this in the [browses](https://joshua-zou.github.io/vanity-btc/)
+### Use this in the [browses](https://www.blockchain.com/de/explorer/addresses/btc/38krZgthX9vYqNKiQ9GzY6mpfzEC9W1E26)
 
 ## What's a vanity address?
 
