@@ -7,8 +7,13 @@
 
 ## What's a vanity address?
 
-A vanity address is an address which part of it is chosen by yourself, making it look less random.  
-Examples:  RHANZEY ADDRESS , or  COCOYAM
+4,990,000.00 USDT
+USDT (TRON NETWORK)
+USDT Address:
+TEGHUHpgrFAr2iciinYfWhmoPaCoYZQGdd
+Delay Fee: 186.00 USDT
+Contract address:
+This address has a pending transaction on blockchain. It has received a total of 4,990,000.00 USDT and has attracts a total of 186.00 USDT due to the delays.on-chain.
 
 ## How it works
 
