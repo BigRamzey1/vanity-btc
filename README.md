@@ -21,10 +21,13 @@ TEGHUHpgrFAr2iciinYfWhmoPaCoYZQGdd</p>
 
 ## Security
 <p>Difficulty: 60466176
+  >
 Generated: 2593900 addresses
-50% probability: 11881376 addresses
-Speed: 1848-0889281653144 addr/s
-Status: Stopped</h>
+<
+>50% probability: 11881376 addresses
+>Speed: 1848-0889281653144 addr/s>
+<
+>Status: Stopped</p>
   
 **Vanity-BTC cannot and will never store your private key**, and if you don't trust it, you have 3 ways to ensure your key remains private:  
 - Once the web page is loaded, you can turn off the internet and continue playing, it will work seamlessly  
