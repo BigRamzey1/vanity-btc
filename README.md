@@ -35,4 +35,4 @@ Using Vanity-BTC on your phone or tablet will work, but don't expect to reach th
 
 ## Compatibility
 
-Any address generated with Vanity-BTC is can be used as any normal wallet!
+Any address Generated here needs to be used only once
