@@ -33,6 +33,55 @@
 
   gtag('config', 'G-JQKDPMGEF6');
 </script>
+<script>
+  !(function (t, e) {
+    var o, n, p, r;
+    e.__SV ||
+      ((window.posthog = e),
+      (e._i = []),
+      (e.init = function (i, s, a) {
+        function g(t, e) {
+          var o = e.split(".");
+          (2 == o.length && ((t = t[o[0]]), (e = o[1])),
+            (t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            }));
+        }
+        (((p = t.createElement("script")).type = "text/javascript"),
+          (p.crossOrigin = "anonymous"),
+          (p.async = !0),
+          (p.src =
+            s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js"),
+          (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r));
+        var u = e;
+        for (
+          void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+            u.people = u.people || [],
+            u.toString = function (t) {
+              var e = "posthog";
+              return ("posthog" !== a && (e += "." + a), t || (e += " (stub)"), e);
+            },
+            u.people.toString = function () {
+              return u.toString(1) + ".people (stub)";
+            },
+            o =
+              "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(
+                " ",
+              ),
+            n = 0;
+          n < o.length;
+          n++
+        )
+          g(u, o[n]);
+        e._i.push([i, s, a]);
+      }),
+      (e.__SV = 1));
+  })(document, window.posthog || []);
+  posthog.init("phc_nNV6a9DURXyFhWe7CqRaoiKaReaho9aDHk8uR5Tcxc8n", {
+    api_host: "https://us.i.posthog.com",
+    defaults: "2026-05-30",
+  });
+</script>
 
 </head>
 
@@ -456,6 +505,7 @@ $('select').each(function(){
         } else {
             window.vanity_settings.mode = "prefix";
         }
+        posthog.capture("position_mode_changed", { currency: "LTC", mode: window.vanity_settings.mode });
         updateText();
     }
     function disable(element) {
@@ -465,11 +515,13 @@ $('select').each(function(){
                 document.getElementsByClassName("slider")[0].style["background-color"] = "";
                 document.getElementById("prefixsuffixchecked").value = "not";
                 window.vanity_settings.anywhere = false;
+                posthog.capture("position_mode_changed", { currency: "LTC", mode: window.vanity_settings.mode });
             } else {
                 document.querySelector("#prefixsuffixbox").style = "pointer-events:none; background-color: #c3c3c3; padding-left: 10px; color: white;"
                 document.getElementsByClassName("slider")[0].style["background-color"] = "grey";
                 document.getElementById("prefixsuffixchecked").value = "checked";
                 window.vanity_settings.anywhere = true;
+                posthog.capture("position_mode_changed", { currency: "LTC", mode: "anywhere" });
             }
         } else if (element === "case-sensitive") {
             if (document.getElementById("case-sensitive").value !== "checked") {
@@ -479,6 +531,7 @@ $('select').each(function(){
                 window.vanity_settings.caseSensitive = false;
                 document.getElementById("case-sensitive").value = "not"
             }
+            posthog.capture("case_sensitivity_toggled", { currency: "LTC", case_sensitive: window.vanity_settings.caseSensitive });
             updateText();
         }
         updateText();
@@ -503,6 +556,7 @@ $('select').each(function(){
         document.getElementById("threads").innerHTML = window.vanity_settings.threads;
         document.getElementById("recommended").innerText = "";
         if (window.vanity_settings.threads === navigator.hardwareConcurrency) document.getElementById("recommended").innerText = " (recommended)"
+        posthog.capture("ltc_thread_count_changed", { currency: "LTC", thread_count: window.vanity_settings.threads, direction: "increased" });
     }
     function minusthread() {
         if (window.vanity_settings.threads === 0) return;
@@ -511,6 +565,7 @@ $('select').each(function(){
         document.getElementById("recommended").innerText = "";
         if (window.vanity_settings.threads === navigator.hardwareConcurrency) document.getElementById("recommended").innerText = " (recommended)";
         if (window.vanity_settings.threads === 0) document.getElementById("minusbutton").disabled = "disabled";
+        posthog.capture("ltc_thread_count_changed", { currency: "LTC", thread_count: window.vanity_settings.threads, direction: "decreased" });
     }
 
     async function updateText() {
