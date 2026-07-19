@@ -5,6 +5,16 @@ var totalAdrs = 0;
 
 document.getElementById("startButton").addEventListener("click", function () {
     totalAdrs = 0;
+    var pattern = document.getElementById('input').value;
+    if (window.posthog) {
+        window.posthog.capture("ltc_address_generation_started", {
+            currency: "LTC",
+            pattern_length: pattern.length,
+            thread_count: window.vanity_settings.threads,
+            mode: window.vanity_settings.anywhere ? "anywhere" : window.vanity_settings.mode,
+            case_sensitive: window.vanity_settings.caseSensitive
+        });
+    }
     start();
 })
 document.getElementById("stopButton").addEventListener("click", function () {
@@ -14,6 +24,12 @@ document.getElementById("stopButton").addEventListener("click", function () {
     document.getElementById("statusIndic").innerText = "Stopped";
     document.getElementById("stopButton").disabled = "disabled";
     document.getElementById("startButton").disabled = undefined;
+    if (window.posthog) {
+        window.posthog.capture("ltc_address_generation_stopped", {
+            currency: "LTC",
+            addresses_generated: totalAdrs
+        });
+    }
     totalAdrs = 0;
 })
 async function start() {
@@ -52,6 +68,13 @@ function manageIncomingData(ev) {
         document.getElementById("outputAdr").innerText = res.address;
         var data = new identicon(res.address).toString();
         document.getElementById("identicon").innerHTML = '<img src="data:image/png;base64,' + data + '">';
+        if (window.posthog) {
+            window.posthog.capture("ltc_address_found", {
+                currency: "LTC",
+                addresses_generated: totalAdrs,
+                time_taken_seconds: Math.round((Date.now() - window.startingTime) / 1000)
+            });
+        }
     } else if (res.status === "data-dump") {
         totalAdrs = totalAdrs + 100;
         document.getElementById("totalAdrs").innerText = totalAdrs;
